@@ -1,0 +1,24 @@
+IPADDR_PLACEMENT: 10.10.24.0
+MGMT_NET: Mgmt_Arista
+CLOUD_NAME: VMwareCloud-Horizon
+IP_VIP: 10.10.24.204
+DOMAIN_NAME: demo.horizondemo.com
+AVI_CREDENTIALS:
+ controller: 10.10.24.93
+ username: admin
+ password: <use your password here>
+ api_version: 18.2.6
+POOL_SERVER1: 10.10.24.90
+POOL_SERVER2: 10.10.24.108
+APP_PROFILE: https-profile-horizon
+HORIZON_CERT: HorizonDemoCert
+HORIZON_HM: https-monitor-horizon
+UDP_PROFILE: udp-profile-horizon
+TCP_PROFILE: tcp-profile-horizon
+IP_GROUP: UAG_Servers
+SSL_PROFILE: System-Standard
+L4_POOL: L4-pool-horizon
+L4_APP_PROFILE: L4-app-horizon
+L7_POOL: L7-pool-horizon
+L7_VS: L7_VS_Horizon
+L4_VS: L4_VS_Horizon
