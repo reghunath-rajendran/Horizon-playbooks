@@ -54,13 +54,6 @@
      health_monitor_refs:
        - "/api/healthmonitor?name={{ HORIZON_HM }}"
      ipaddrgroup_ref: '/api/ipaddrgroup?name={{ IP_GROUP }}'
-     placement_networks:
-       - subnet:
-          ip_addr:
-            addr: "{{ IPADDR_PLACEMENT }}"
-            type: V4
-          mask: 24
-         network_ref: '/api/network?name={{ MGMT_NET }}'
      name: "{{ L4_POOL }}"
 
   - name: Configuring L4 Virtual Service for all protocols
@@ -87,11 +80,3 @@
       - ip_address:
          addr: "{{ IP_VIP_L4 }}"
          type: V4
-        placement_networks:
-        - subnet:
-            ip_addr:
-              addr: "{{ IPADDR_PLACEMENT }}"
-              type: V4
-            mask: 24
-          network_ref: '/api/network?name={{ MGMT_NET }}'
- 
